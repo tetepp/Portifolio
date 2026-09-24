@@ -176,10 +176,13 @@ span{
     background-color: var(--main-color);
     color: #ffffff;
 }
-.text-animation{
+.text-animation {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
+    overflow: hidden;        /* contém o ::after */
+    line-height: 1.2;        /* altura de linha previsível */
+    display: inline-block;   /* ajuda no cálculo de altura */
 }
 .text-animation span{
     position: relative;
